@@ -6,7 +6,6 @@ use Illuminate\Console\Command;
 use Laravel\Pennant\FeatureManager;
 use Symfony\Component\Console\Attribute\AsCommand;
 
-#[AsCommand(name: 'pennant:purge', aliases: ['pennant:clear'])]
 class PurgeCommand extends Command
 {
     /**
@@ -26,13 +25,6 @@ class PurgeCommand extends Command
      * @var string
      */
     protected $description = 'Delete Pennant features from storage';
-
-    /**
-     * The console command name aliases.
-     *
-     * @var string[]
-     */
-    protected $aliases = ['pennant:clear'];
 
     /**
      * Execute the console command.
